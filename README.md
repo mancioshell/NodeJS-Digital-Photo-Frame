@@ -14,3 +14,10 @@ You can simulate cec command using client/ws-client.js
 - Open browser at `localhost:3000`
 
 - Enjoy :)
+
+
+## Used Technology:
+- Seneca JS - https://github.com/senecajs/seneca
+- Express JS - https://github.com/strongloop/express
+- Socket.io : https://github.com/socketio/socket.io/
+- Node CEC : https://github.com/pmorissette/nodecec
