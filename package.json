@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/mancioshell/NodeJSDigitalPictureFrame#readme",
   "dependencies": {
-    "binaryjs": "^0.2.1",
     "express": "^4.13.3",
-    "nodecec": "0.0.3"
+    "nconf": "^0.8.2",
+    "nodecec": "0.0.3",
+    "seneca": "^0.9.3",
+    "socket.io": "^1.3.7",
+    "socket.io-stream": "^0.9.0"
   }
 }

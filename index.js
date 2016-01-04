@@ -1,33 +1,15 @@
-var NodeCEC = require('../nodecec')
+var http = require('http');
 
-var cec = new NodeCEC();
+var express = require('express');
+var app = express();
+app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/css'));
+app.use(express.static(__dirname + '/public/views'));
+app.use(express.static(__dirname + '/public/views/partials'));
+var server = http.createServer(app);
 
-// start cec connection
-cec.start();
-
-cec.on('ready', function(data) {
-    console.log("ready...");
+app.get('/', function (req, res) {
+  res.sendfile('index.html');
 });
 
-cec.on('status', function(data) {
-   console.log("[" + data.id + "] changed from " + data.from + " to " + data.to); 
-});
-
-cec.on('key', function(data) {
-    console.log(data.name);
-});
-
-cec.on('close', function(code) {
-    process.exit(0);
-});
-
-cec.on('error', function(data) {
-    console.log('---------------- ERROR ------------------');
-    console.log(data);
-    console.log('-----------------------------------------');
-});
-
-var stdin = process.openStdin();
-stdin.on('data', function(chunk) { 
-    cec.send(chunk);
-});
+server.listen(3000);

@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "version": "0.0.2",
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "*",
+    "angular-spinner": "^0.8.0",
+    "bootstrap": "*",
+    "jquery": "*",
+    "socket.io-client": "*"
+  }
+}
