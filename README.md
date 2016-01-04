@@ -2,6 +2,8 @@
 
 NodeJS Digital Picture Frame using seneca framework to create microservice, and socket.io to push image from Filesystem(or NAS) to the browser connected.
 
+- Compile js client with browserify: `browserify public/src/main/index.js -o public bundle.js`
+
 - Start cec-client : `node cec/cec-client.js` (You must have an hardware support USB CEC Adapter. See this for more information: https://github.com/Pulse-Eight/libcec).
 You can simulate cec command using client/ws-client.js
 
@@ -17,6 +19,7 @@ You can simulate cec command using client/ws-client.js
 
 
 ## Used Technology:
+- Browserify : https://github.com/substack/node-browserify
 - Seneca JS - https://github.com/senecajs/seneca
 - Express JS - https://github.com/strongloop/express
 - Socket.io : https://github.com/socketio/socket.io/
