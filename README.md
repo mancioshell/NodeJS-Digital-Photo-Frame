@@ -1,6 +1,6 @@
 ## NodeJSDigitalPictureFrame
 
-NodeJS Digital Picture Frame using seneca framework to create microservice, and socket.io to push image from Filesystem(or NAS) to the browser connected.
+NodeJS Digital Picture Frame using seneca framework to create microservice, and socket.io to push image from Filesystem(or NAS) to the connected browser.
 
 - Compile js client with browserify: `browserify public/src/main/index.js -o public bundle.js`
 
